@@ -12,6 +12,7 @@ public class Song {
     public Song(String title, int length){
         this.title = title;
         this.length = length;
+        this.likes = 0 ;
     }
 
     public String getTitle() {
@@ -36,5 +37,14 @@ public class Song {
 
     public void setLikes(int likes) {
         this.likes = likes;
+    }
+
+    @Override
+    public String toString() {
+        return "Song{" +
+                "title='" + title + '\'' +
+                ", length=" + length +
+                ", likes=" + likes +
+                '}';
     }
 }
